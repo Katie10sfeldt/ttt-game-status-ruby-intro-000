@@ -19,12 +19,12 @@ WIN_COMBINATIONS = [
 def won?(board)
   WIN_COMBINATIONS.each do |win_array|
     if board[win_array[0]] == "X" && board[win_array[1]] == "X" && board[win_array[2]] == "X"
-      win_array
+      return win_array
     elsif board[win_array[0]] == "O" && board[win_array[1]] == "O" && board[win_array[2]] == "O"
-      win_array
+      return win_array
     end
   end
-  false
+  return false
 end
 
 def full?(board)
