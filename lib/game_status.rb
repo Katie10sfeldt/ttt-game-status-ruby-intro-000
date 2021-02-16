@@ -16,7 +16,7 @@ WIN_COMBINATIONS = [
   [2,4,6]  # Diagonal right
 ]
 
-def won(board)
+def won?(board)
   WIN_COMBINATIONS.each do |win_array|
     if board[win_array[0]] == "X" && board[win_array[1]] == "X" && board[win_array[2]] == "X"
       return win_array
